@@ -1,9 +1,10 @@
 import PageWrapper from "./containers/PageWrapper";
+import Navbar from "./containers/navigation/Navbar";
 
 function App() {
   return (
     <PageWrapper>
-      <div style={{ width: "100%" }}>here</div>
+      <Navbar />
     </PageWrapper>
   );
 }
