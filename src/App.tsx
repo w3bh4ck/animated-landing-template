@@ -1,11 +1,15 @@
+import { ThemeProvider } from "styled-components";
 import PageWrapper from "./containers/PageWrapper";
 import Navbar from "./containers/navigation/Navbar";
+import { theme } from "./assets/theme/theme";
 
 function App() {
   return (
-    <PageWrapper>
-      <Navbar />
-    </PageWrapper>
+    <ThemeProvider theme={theme}>
+      <PageWrapper>
+        <Navbar />
+      </PageWrapper>
+    </ThemeProvider>
   );
 }
 
