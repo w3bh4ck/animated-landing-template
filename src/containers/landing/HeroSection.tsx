@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Icon } from "../../components/common/Icon";
 
-const Landing = () => {
+const HeroSection = () => {
   return (
     <StyledLandingPage>
       <div className="hero-wrapper">
@@ -24,7 +24,12 @@ const Landing = () => {
             </div>
           </div>
           <div className="hero-image">
-            <img src="/assets/laptop.png" height={270} width={400} alt="hero" />
+            <img
+              src="/assets/images/laptop.png"
+              height={270}
+              width={400}
+              alt="hero"
+            />
           </div>
         </div>
         <div className="hero-text pl-2 flx center">
@@ -39,7 +44,7 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default HeroSection;
 
 const StyledLandingPage = styled.div`
   .hero-wrapper {
