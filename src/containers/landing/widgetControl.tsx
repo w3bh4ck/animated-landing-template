@@ -31,7 +31,7 @@ const WidgetControl = () => {
             <Icon svg="up-stat" height={20} width={20} />{" "}
             <div className="stat-change">+14%</div>
           </div>
-          <div className="total-profit">43K</div>
+          <div className="tnx-change">43K</div>
         </div>
       </div>
       <div className="header">Widget Control</div>
@@ -72,7 +72,7 @@ const StyledWidgetControl = styled.div`
     justify-content: right;
   }
 
-  .total-profit {
+  .tnx-change {
     font-size: 38px;
     padding-top: 10px;
     text-align: center;

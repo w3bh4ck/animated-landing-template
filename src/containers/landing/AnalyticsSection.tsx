@@ -47,6 +47,15 @@ const AnalyticsSection = () => {
           <WidgetControl />
         </div>
       </div>
+      <div className="flx center tag-line">
+        <div className="mid">Up to </div>
+        <div className="large"> 45% </div>
+        <div className="small">
+          Increase your analytics efficiency by up to 45%. Unique algorithms
+          provide insights from data, reduce time for analysis and save time for
+          making important, informed decisions.
+        </div>
+      </div>
     </StyledAnalyticsSection>
   );
 };
@@ -119,5 +128,28 @@ const StyledAnalyticsSection = styled.div`
   .widget-control {
     width: 45%;
     margin-left: 15px;
+  }
+
+  .tag-line {
+    text-align: center;
+    gap: 10px;
+    margin-top: 30px;
+    color: ${({ theme }) => theme.colors.dark};
+  }
+
+  .mid {
+    font-size: 28px;
+    padding-top: 60px;
+  }
+
+  .large {
+    font-size: 98px;
+    font-weight: 500;
+  }
+
+  .small {
+    width: 450px;
+    text-align: left;
+    padding-top: 30px;
   }
 `;
