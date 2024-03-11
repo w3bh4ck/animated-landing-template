@@ -3,6 +3,7 @@ import Button from "../../components/common/Button";
 import { Icon } from "../../components/common/Icon";
 import VisitorsProgress from "./VisitorsProgress";
 import VisitStat from "./VisitStat";
+import WidgetControl from "./widgetControl";
 
 const AnalyticsSection = () => {
   return (
@@ -42,6 +43,9 @@ const AnalyticsSection = () => {
             </div>
           </div>
         </div>
+        <div className="widget-control">
+          <WidgetControl />
+        </div>
       </div>
     </StyledAnalyticsSection>
   );
@@ -63,12 +67,12 @@ const StyledAnalyticsSection = styled.div`
   .regular-text {
     font-size: 20px;
     width: 300px;
-    padding-right: 40px;
+    padding-right: 100px;
     color: ${({ theme }) => theme.colors.dark};
   }
 
   .analytics-sample {
-    width: 50%;
+    width: 55%;
     background-color: #ffffff;
     border-radius: 30px;
     border: 1px solid ${({ theme }) => theme.colors.white};
@@ -90,8 +94,8 @@ const StyledAnalyticsSection = styled.div`
   }
 
   .sales-statistics {
-    width: 350px;
-    height: 300px;
+    width: 380px;
+    height: 320px;
     background-color: #ffffff;
     border-top-left-radius: 20px;
     border-left: 1px solid ${({ theme }) => theme.colors.white};
@@ -110,5 +114,10 @@ const StyledAnalyticsSection = styled.div`
     padding-top: 10px;
     font-size: 24px;
     color: ${({ theme }) => theme.colors.dark};
+  }
+
+  .widget-control {
+    width: 45%;
+    margin-left: 15px;
   }
 `;
