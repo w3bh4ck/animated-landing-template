@@ -1,13 +1,13 @@
 import HeroSection from "../../containers/landing/HeroSection";
 import AnalyticsSection from "../../containers/landing/AnalyticsSection";
-import Highlights from "../../containers/landing/Highlights";
+import EfficiencySection from "../../containers/landing/EfficiencySection";
 
 const LandingPage = () => {
   return (
     <div>
       <HeroSection />
       <AnalyticsSection />
-      <Highlights />
+      <EfficiencySection />
     </div>
   );
 };
