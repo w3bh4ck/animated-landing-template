@@ -12,7 +12,12 @@ const EfficiencySection = () => {
         <div className="flx lap-icons">
           <StyledIconWrapper className="lap flx center" color="#f2f2f2">
             <div className="pulse-icon">
-              <img src="/assets/images/pulse.png" height={22} width={22} />
+              <img
+                alt="pulse"
+                src="/assets/images/pulse.png"
+                height={22}
+                width={22}
+              />
             </div>
           </StyledIconWrapper>
           <StyledIconWrapper color="#ffd026">

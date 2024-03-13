@@ -4,6 +4,7 @@ import EfficiencySection from "../../containers/landing/EfficiencySection";
 import SampleBrand from "../../containers/landing/SampleBrand";
 import ControlSection from "../../containers/landing/ControlSection";
 import CallToAction from "../../containers/landing/CallToAction";
+import Footer from "../../containers/footer/Footer";
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
       <SampleBrand />
       <ControlSection />
       <CallToAction />
+      <Footer />
     </div>
   );
 };

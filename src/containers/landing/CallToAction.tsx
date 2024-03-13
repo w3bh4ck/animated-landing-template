@@ -5,7 +5,12 @@ const CallToAction = () => {
   return (
     <StyledCallToAction>
       <div className="flx center">
-        <img src="/assets/images/cta-logo.png" height={100} width={100} />
+        <img
+          alt="cta-logo"
+          src="/assets/images/cta-logo.png"
+          height={100}
+          width={100}
+        />
       </div>
       <div className="lead">Get Started</div>
       <div className="flx center">
@@ -58,5 +63,6 @@ const StyledCallToAction = styled.div`
   .cta-buttons {
     margin-top: 50px;
     gap: 20px;
+    padding-bottom: 50px;
   }
 `;
