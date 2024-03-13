@@ -11,7 +11,12 @@ const ControlSection = () => {
 
       <div className="flx center control-services">
         <div className="ctx">
-          <img src="/assets/images/conversion.png" height={300} width={400} />
+          <img
+            alt="conversion"
+            src="/assets/images/conversion.png"
+            height={300}
+            width={400}
+          />
           <div>
             <div className="ctx-header">Improved customer service</div>
             <div className="ctx-description">
@@ -22,7 +27,12 @@ const ControlSection = () => {
           </div>
         </div>
         <div className="ctx">
-          <img src="/assets/images/insight.png" height={300} width={400} />
+          <img
+            alt="insight"
+            src="/assets/images/insight.png"
+            height={300}
+            width={400}
+          />
           <div>
             <div className="ctx-header">Monitoring key indicator</div>
             <div className="ctx-description">

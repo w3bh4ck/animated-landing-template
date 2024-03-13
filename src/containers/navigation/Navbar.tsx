@@ -15,14 +15,16 @@ const Navbar = () => {
     <StyledNavbar>
       <div className="nav">
         <div>
-          <img className="logo" src={logo} height={60} width={120} alt="logo" />
+          <img alt="logo" className="logo" src={logo} height={60} width={120} />
         </div>
-        <div className="nav-list">
-          {navList.map((item) => (
-            <li>
-              <a href={item.path}>{item.lable}</a>
-            </li>
-          ))}
+        <div>
+          <ul className="nav-list">
+            {navList.map((item) => (
+              <li>
+                <a href={item.path}>{item.lable}</a>
+              </li>
+            ))}
+          </ul>
         </div>
         <div className="action">
           <Button label="Sign Up" />
