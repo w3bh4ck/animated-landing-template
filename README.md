@@ -11,3 +11,9 @@ Run: `npm run dev`
 ##Pending
 
 - Page Animation
+
+## Technologies Used
+
+- **React/Vite**: Used React/Vite as the library of choice to build the components.
+
+- **Styled Component**: Used Styled component inorder to write all styling myself.
