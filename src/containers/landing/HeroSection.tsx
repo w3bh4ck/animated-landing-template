@@ -1,9 +1,16 @@
 import styled from "styled-components";
 import { Icon } from "../../components/common/Icon";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import { animateHero } from "../../utils/gsap.animate";
 
 const HeroSection = () => {
+  const heroContainer = useRef(null);
+
+  useGSAP(() => animateHero(), { scope: heroContainer });
+
   return (
-    <StyledLandingPage>
+    <StyledLandingPage ref={heroContainer}>
       <div className="hero-wrapper">
         <div className="flx">
           <div>
@@ -17,9 +24,9 @@ const HeroSection = () => {
                   svg="node"
                 />
               </div>
-              <div className="hero-text">Analytics</div>
+              <div className="hero-text tx-1">Analytics</div>
             </div>
-            <div className="hero-text pl-2">
+            <div className="hero-text pl-2 tx-2">
               that <span className="gray">helps</span> you
             </div>
           </div>
@@ -32,7 +39,7 @@ const HeroSection = () => {
             />
           </div>
         </div>
-        <div className="hero-text pl-2 flx center">
+        <div className="hero-text pl-2 flx center tx-3">
           Shape{" "}
           <div className="pt-2 pl-2 pr-2">
             <Icon className="voice" height={120} width={120} svg="voice" />
